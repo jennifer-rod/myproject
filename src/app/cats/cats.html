@@ -1,1 +1,14 @@
-<p>cats works!</p>
+<div class="page-container">
+    <div class="page-header">
+      <h1>🐱 Gatos</h1>
+      <p>Las razas más populares del mundo felino</p>
+    </div>
+    <div class="pet-grid">
+      <div class="pet-card" *ngFor="let cat of cats">
+        <div class="pet-emoji">{{ cat.emoji }}</div>
+        <h3>{{ cat.name }}</h3>
+        <span class="badge">{{ cat.origin }}</span>
+        <p>{{ cat.description }}</p>
+      </div>
+    </div>
+  </div>

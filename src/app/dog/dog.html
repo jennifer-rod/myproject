@@ -1,1 +1,14 @@
-<p>dog works!</p>
+<div class="page-container">
+    <div class="page-header">
+      <h1>🐶 Perros</h1>
+      <p>Las razas más queridas del mundo canino</p>
+    </div>
+    <div class="pet-grid">
+      <div class="pet-card" *ngFor="let dog of dogs">
+        <div class="pet-emoji">{{ dog.emoji }}</div>
+        <h3>{{ dog.name }}</h3>
+        <span class="badge">{{ dog.origin }}</span>
+        <p>{{ dog.description }}</p>
+      </div>
+    </div>
+  </div>

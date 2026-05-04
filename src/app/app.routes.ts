@@ -1,16 +1,14 @@
 import { Routes } from '@angular/router';
-import {Dog} from './dog/dog';
-import {Home} from './home/home';
-import {Navbar} from './navbar/navbar';
-import {Cats} from './cats/cats'
-
+import { Dog } from './dog/dog';
+import { Home } from './home/home';
+import { Cats } from './cats/cats';
+import { About } from './about/about';
 
 export const routes: Routes = [
-
-    {path: 'home', component: Home},
-    {path: 'dog', component: Dog},
-    {path: 'cats', component: Cats},
-    {path: 'navbar', component: Navbar},
-    {path: '**', redirectTo: ''}
-
+  { path: '', redirectTo: 'home', pathMatch: 'full' },
+  { path: 'home', component: Home },
+  { path: 'dog', component: Dog },
+  { path: 'cats', component: Cats },
+  { path: 'about', component: About },
+  { path: '**', redirectTo: 'home' }
 ];

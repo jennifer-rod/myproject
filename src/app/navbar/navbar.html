@@ -1,1 +1,13 @@
-<p>navbar works!</p>
+<nav class="navbar">
+    <div class="nav-brand">
+      <span class="brand-icon">🐾</span>
+      <span class="brand-text">PetWorld</span>
+    </div>
+    <ul class="nav-links">
+      <li><a routerLink="/home" routerLinkActive="active">Home</a></li>
+      <li><a routerLink="/cats" routerLinkActive="active">🐱 Cats</a></li>
+      <li><a routerLink="/dog" routerLinkActive="active">🐶 Dogs</a></li>
+      <li><a routerLink="/about" routerLinkActive="active">About</a></li>
+    </ul>
+    <div class="nav-toggle" (click)="toggleMenu()">☰</div>
+  </nav>
